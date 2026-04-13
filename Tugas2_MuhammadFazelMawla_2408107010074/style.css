@@ -1,0 +1,545 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364) !important;
+    color: #ffffff;
+}
+
+/* Tema Gradasi */
+.bg-gradient {
+   background: linear-gradient(135deg, #0F2027, #203A43, #2C5364) !important;
+    color: #ffffff;
+}
+
+body.bg-gradient {
+    background: linear-gradient(135deg, #0F2027, #203A43, #2C5364) !important;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+/* ============= BOOTSTRAP NAVBAR CUSTOMIZATION ============= */
+.navbar {
+    padding: 1rem 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    color: #4facfe !important;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+    transform: scale(1.05);
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #4facfe !important;
+    border-bottom: 2px solid #4facfe;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Layout Split 50/50 untuk Index */
+.split-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 50%;
+    height: 115%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.left-side img {
+    height: 120%; 
+    width: auto;
+    max-width: 100%;
+    object-fit: contain; 
+    object-position: bottom; 
+    filter: drop-shadow(15px 15px 25px rgba(0, 0, 0, 0.6)); 
+    z-index: 5;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Konten Teks Profil */
+.content {
+    text-align: center;
+    z-index: 10;
+}
+
+
+/* nama  */
+
+.typing-name-container {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.name-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+
+    font-family: "Saira Stencil One", sans-serif;
+    white-space: nowrap;
+    
+    background: linear-gradient(to right, #052745 0%, #021b79 50%, #021c32 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.4));
+
+}
+
+/*Informatics Student & NPM   */
+
+.status-container {
+    margin-bottom: 10px; 
+}
+
+.status-text {
+    font-size: 1.7rem;
+    font-weight: 800; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Saira Stencil One", sans-serif;
+    
+    /* Gradasi Biru Terang ke Biru Dongker Gelap */
+   /* background: linear-gradient(to right, #052745 0%, #021b79 50%, #021c32 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.4)); */
+
+}
+
+.flicker-animation {
+    animation: flicker 3s linear infinite; 
+}
+
+/* Bootstrap Table - Tema Gelap */
+.table-dark {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.table-dark thead th {
+    background-color: rgba(79, 172, 254, 0.15) !important;
+    border-bottom: 2px solid #4facfe !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.table-dark tbody tr {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.table-dark tbody tr:nth-of-type(odd) {
+    background-color: transparent !important;
+}
+
+.table-dark tbody tr:hover {
+    background-color: rgba(79, 172, 254, 0.1) !important;
+}
+
+.table-dark td {
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.table-dark .badge {
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #0d1a7c;
+    margin-bottom: 30px;
+
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #4facfe;
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Bootstrap Button Styling */
+.btn-outline-light {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #4facfe !important;
+    border-color: #4facfe !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.3);
+}
+
+/* Layout Halaman Akademik (Card, Tabel, List) */
+.academic-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 20px 50px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card-header {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.card-title {
+    color: #4facfe;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.interactive-card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.interactive-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Bootstrap Table */
+.table {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.table thead th {
+    border-bottom: 2px solid #4facfe !important;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(79, 172, 254, 0.1) !important;
+}
+
+.table .badge {
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+/* Bootstrap List Group */
+.list-group-item {
+    background: transparent !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background: rgba(79, 172, 254, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.list-group-item h6 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.list-group-item .small {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ANIMATION */
+
+/* Animasi Flicker pada Status */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    40% { opacity: 1; }
+    45% { opacity: 0; } 
+    50% { opacity: 1; }
+    55% { opacity: 0; } 
+    60% { opacity: 1; }
+}
+
+/*Slide Up & Fade */
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-delay-1, .animate-delay-2, .animate-delay-3, .animate-delay-4, .animate-delay-5, .animate-delay-6 {
+    opacity: 0;
+    animation: slideUpFade 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.animate-delay-1 { animation-delay: 0.1s; } 
+.animate-delay-2 { animation-delay: 0.3s; } 
+.animate-delay-3 { animation-delay: 0.5s; } 
+.animate-delay-4 { animation-delay: 0.7s; } 
+.animate-delay-5 { animation-delay: 0.9s; } 
+.animate-delay-6 { animation-delay: 1.1s; }
+
+/* ============= RESPONSIVE DESIGN ============= */
+@media (max-width: 768px) {
+    .split-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .left-side {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .left-side img {
+        max-height: 300px;
+        height: auto;
+    }
+
+    .name-title {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .academic-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .navbar {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 0.5rem 0 !important;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .name-title {
+        font-size: 1.5rem;
+    }
+
+    .status-text {
+        font-size: 1.2rem;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .status-container {
+        margin-bottom: 15px;
+    }
+
+    .social-icons a {
+        font-size: 1.3rem;
+        margin: 0 8px;
+    }
+
+    .academic-container {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 0 !important;
+    }
+
+    .card-body {
+        padding: 1.5rem !important;
+    }
+}
+
+/* ============= CAROUSEL STYLING ============= */
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.carousel-item {
+    padding: 2rem;
+    min-height: 300px;
+    transition: all 0.6s ease;
+}
+
+.carousel-item img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2);
+    transition: all 0.3s ease;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.carousel-item img:hover {
+    box-shadow: 0 15px 40px rgba(79, 172, 254, 0.4);
+    transform: scale(1.02);
+}
+
+.carousel-item h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.carousel-item .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(79, 172, 254, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(79, 172, 254, 0.4);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Indicators */
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: #4facfe;
+    width: 14px;
+    height: 14px;
+}
